@@ -19,4 +19,7 @@ resource "azurerm_cosmosdb_sql_container" "cosmosdb" {
   unique_key {
     paths = var.unique_key_list
   }
+  provisioner "local-exec" {    
+    command = "az cosmosdb sql container update --account-name ${var.cosmosaccount_name} --database-name ${var.cosmosdatabase_name} --name ${var.cosmos_container_name} --resource-group ${var.resource_group_name} --ttl ${var.time_to_live}" 
+  }
 }
