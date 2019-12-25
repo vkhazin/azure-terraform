@@ -32,5 +32,5 @@ sed -i -e "s/{terraform_state_container_name}/${terraform_state_container_name}/
 sed -i -e "s/{terraform_state_key_name}/${env}/g" ./remote-state.tf
 ############################################################################### 
 
-echo "terraform_install_dir: ${terraform_install_dir}" 
 ${terraform_install_dir}/terraform init
+${terraform_install_dir}/terraform $2 $3

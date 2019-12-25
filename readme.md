@@ -12,9 +12,10 @@
 
 ## Local Setup
 
+* 
 * One-time per local environment after repository has been cloned
 * Enable scripts execution: `chmod +x ./scripts/*.sh && chmod +x ./env/*.sh`
-* Install terraform: `./scripts/setup-ubuntu-18.04.sh`
+* Install terraform: `./scripts/local-setup-ubuntu-18.04.sh`
 
 
 ## Environment setup

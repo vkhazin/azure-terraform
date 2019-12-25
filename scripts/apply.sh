@@ -1,0 +1,1 @@
+source ./scripts/common.sh "$@" "apply" --auto-approve
