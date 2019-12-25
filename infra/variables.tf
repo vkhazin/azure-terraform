@@ -1,3 +1,3 @@
-variable "azure-region" {}
-variable "resource-group-name" {}
+variable "azure_region" {}
+variable "resource_group_name" {}
 
