@@ -4,15 +4,14 @@
 variable "azure_region" {}
 
 variable "resource_group_name" {}
+variable "storage_account_name" {}
 ###############################################################################
 
 
-# ###############################################################################
-# # Function App
-# ###############################################################################
-# variable "func-authn-name" {
-#   description = "The name of the function app"
-# }
+###############################################################################
+# AuthC Function App
+###############################################################################
+variable "function_app_authc_name" {}
 
 # variable "func-runtime-version" {
 #   description = "The runtime version associated with the Function App. Possible values are `~1` and `beta`"
