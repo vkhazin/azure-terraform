@@ -1,7 +1,7 @@
 resource "azurerm_storage_account" "storage-account" {
-  name                      = "${var.storage_account_name}"
-  resource_group_name       = "${var.resource_group_name}"
-  location                  = "${var.azure_region}"
+  name                      = var.storage_account_name
+  resource_group_name       = var.resource_group_name
+  location                  = var.azure_region
   account_tier              = "Standard"
   account_kind              = "StorageV2"
   # https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy
