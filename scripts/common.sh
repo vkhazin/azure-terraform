@@ -11,7 +11,7 @@ env_config="$(pwd)/env/$env.sh"
 
 if ! [ -e ${env_config} ] 
   then 
-    echo "Project configuration ${env_config} was not found" 
+    echo "Environment configuration ${env_config} was not found" 
     exit 
 fi 
 

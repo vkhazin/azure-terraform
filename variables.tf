@@ -10,4 +10,6 @@ variable "storage_account_name" {}
 # Function Apps
 ###############################################################################
 variable "function_app_authc_name" {}
+variable "function_app_authc_AppClientId" {}
+variable "function_app_authc_ClientSecret" {}
 ###############################################################################

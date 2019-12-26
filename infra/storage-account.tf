@@ -11,6 +11,6 @@ resource "azurerm_storage_account" "storage-account" {
   enable_https_traffic_only = true
 
   depends_on                = [
-    "azurerm_resource_group.resource-group"
+    azurerm_resource_group.resource-group
   ]
 }

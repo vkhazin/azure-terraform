@@ -3,5 +3,9 @@ terraform {
 }
 
 provider "azurerm" {
-  version = ">= 1.3.0"
+  version = ">= 1.3.3"
+}
+
+provider "null" {
+  version = "~> 2.1"
 }

@@ -8,4 +8,7 @@ resource "azurerm_app_service_plan" "function-app-service-plan" {
     tier                    = "Dynamic"
     size                    = "Y1"
   }
+  depends_on                = [
+    var.dependencies
+  ]
 }
