@@ -20,21 +20,16 @@ resource "azurerm_function_app" "function-app" {
   ]
   version                             = "~2"
 
-  # Source deployment
-  # https://stackoverflow.com/questions/56495574/how-can-i-deploy-an-function-app-in-azure-from-a-remote-git-using-terraform
-  # provisioner "local-exec" {
-  #   command = "az functionapp deployment source config --ids ${azurerm_function_app.function-app.id} --repo-url ${var.source_url} --branch ${var.source_branch} --manual-integration"
-  # }
 }
 
 # Source code deployment, forced on appy
 # https://stackoverflow.com/questions/56495574/how-can-i-deploy-an-function-app-in-azure-from-a-remote-git-using-terraform
-resource "null_resource" "deployment" {
-  triggers = {
-    always_run = "${timestamp()}"
-  }
+# resource "null_resource" "deployment" {
+#   triggers = {
+#     always_run = "${timestamp()}"
+#   }
 
-  provisioner "local-exec" {
-    command = "az functionapp deployment source config --ids ${azurerm_function_app.function-app.id} --repo-url ${var.source_url} --branch ${var.source_branch} --manual-integration"
-    }
-}
+#   provisioner "local-exec" {
+#     command = "az functionapp deployment source config --ids ${azurerm_function_app.function-app.id} --repo-url ${var.source_url} --branch ${var.source_branch} --manual-integration"
+#     }
+# }

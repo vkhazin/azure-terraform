@@ -9,11 +9,13 @@
 
 ## Azure Portal Setup
 
-* One-time per subscription
+* One-time per subscription: terraform remote step
 * Create a new `resource group`, `storage account` and `container` for the [remote state](./remote-state.tf)
 
 ## Local Setup
 
+* Once per local environment
+* Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), not required when using Visual Studio Online
 * Azure cli authentication: `az login`
 * One-time per local environment after repository has been cloned
 * Enable scripts execution: `chmod +x ./scripts/*.sh && chmod +x ./env/*.sh`
