@@ -12,7 +12,7 @@
 
 ## Local Setup
 
-* 
+* Azure cli authentication: `az login`
 * One-time per local environment after repository has been cloned
 * Enable scripts execution: `chmod +x ./scripts/*.sh && chmod +x ./env/*.sh`
 * Install terraform: `./scripts/local-setup-ubuntu-18.04.sh`
@@ -21,9 +21,7 @@
 ## Environment setup
 
 * Create a new file under ./env folder or update an existing file
+* To select/change subscription: `az account set --subscription="SUBSCRIPTION_ID"`
 * Verify the plan: `./scripts/plan.sh poc`
-
-## Usage
-
-* For Cosmos DB container creation, we need to pass unique key parameters in the command: terraform apply -var='unique_key_list=["/uniquekey1","/uniquekey2"]'
-* Also, for passing the partition_key_name in Cosmos DB Container creation, need to specify the key name with a forward slash
+* Apply the plan: `./scripts/apply.sh poc`
+* Destroy the plan: `./scripts/destroy.sh poc`
