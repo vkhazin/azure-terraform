@@ -24,8 +24,8 @@
 ## Secrets Setup
 
 ```
-export TF_VAR_function_app_authc_AppClientId='azure ad app client id'
-export TF_VAR_function_app_authc_ClientSecret='azure ad app client secret'
+export TF_VAR_function_app_authn_AppClientId='azure ad app client id'
+export TF_VAR_function_app_authn_ClientSecret='azure ad app client secret'
 ```
 
 ## Environment setup

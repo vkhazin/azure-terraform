@@ -24,6 +24,6 @@ export TF_VAR_storage_account_name="st${deployment_name}"
 ###############################################################################
 # Function Apps
 ###############################################################################
-export TF_VAR_function_app_authc_name="authn"
-export TF_VAR_function_app_authc_version="24"
+export TF_VAR_function_app_authn_name="authn"
+export TF_VAR_function_app_authn_version="24"
 ###############################################################################
