@@ -11,8 +11,7 @@ module "function-app-authn" {
     FUNCTIONS_EXTENSION_VERSION             = "~2"
     WEBSITE_RUN_FROM_PACKAGE                = 1
     FUNCTIONS_WORKER_RUNTIME                = "dotnet"
+    WEBSITE_USE_ZIP                         = "https://bitbucket.org/vktrp/azuread-authn-svc/downloads/trgos-authentication-${var.function_app_authc_version}.zip"
   }
   cors_allowed_origins                      = ["*"]
-  source_url                                = "https://vkhazin@bitbucket.org/vktrp/azuread-authn-svc.git"
-  source_branch                             = "master"
 }

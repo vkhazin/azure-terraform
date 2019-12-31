@@ -7,6 +7,4 @@ variable "dependencies" {}
 variable "cors_allowed_origins" {
   type = list
 }
-variable "source_url" {}
-variable "source_branch" {}
 

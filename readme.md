@@ -35,3 +35,7 @@ export TF_VAR_function_app_authc_ClientSecret='azure ad app client secret'
 * Verify the plan: `./scripts/plan.sh poc`
 * Apply the plan: `./scripts/apply.sh poc`
 * Destroy the plan: `./scripts/destroy.sh poc`
+
+## TODO:
+
+* Artifact download from Bitbucket - add uid/pwd to the url for private repos
